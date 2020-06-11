@@ -1,0 +1,14 @@
+@import "variables";
+@import "components";
+
+@font-face {
+   font-family: "AkiraExpanded";
+   src: url("/assets/AkiraExpanded.otf") format("opentype");
+}
+
+body {
+    background: $black;
+    color: $white !important;
+    font-family: $akira;
+    font-size: 16px;
+}

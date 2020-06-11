@@ -1,0 +1,39 @@
+<head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+
+  <!-- SEO Information -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.url == "/404.html" %}
+  <meta http-equiv="refresh" content="5; url=/">
+  {% endif %}
+
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="author" content="Montier Kess" />
+  <meta name="description" content="{{ page.seo-description }}" />
+  <meta name="keywords" content="{{ page.seo-keywords }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html','' }}" />
+
+  <!-- Meta OG Tags -->
+  <meta name="og:title" content="SVNCRWNS" />
+  <meta name="og:title" content="Mgmt Co. + Studio" />
+  <meta property="og:url" content="https://www.svncrwns.com" />
+  <meta property="og:image" content="img/og-img.png" />
+
+  <link rel="shortcut icon" href="/crwn.png" type="image/png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <!-- Vendor Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/css/vendor/frow.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/vendor/hamburgers.css" />
+  <link rel="stylesheet" type="text/css" href="/css/vendor/animate.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+<body>

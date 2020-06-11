@@ -1,0 +1,374 @@
+.hamburger {
+    background: white;
+  }
+  
+  /* Phase 1 Header */
+  .phase1_menu_btn {
+      text-indent: 0;
+      color: #fff;
+      position: relative;
+      background-color: transparent;
+      border: none;
+      width: 50px;
+  }
+  .phase1_menu_btn:hover {
+    -o-transition:.75s;
+    -ms-transition:.75s;
+    -moz-transition:.75s;
+    -webkit-transition:.75s;
+    transition:.75s;
+  }
+  .phase1_menu_btn:active {
+    position: relative;
+  }
+  #phase1-overlay-menu {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 7000;
+    outline: transparent;
+  }
+  .phase1-overlay-close {
+    width: 40px;
+    height: 37px;
+    overflow: hidden;
+    border: 0 !important;
+    background-color: transparent !important;
+    z-index: 7000;
+    outline: transparent;
+  
+ 
+  }
+  .flex-centered {
+      height: 100%;
+      justify-content: flex-start !important;
+      align-items: center;
+  }
+  
+  /* No Scroll w/ Overlay Present */
+  body.noScroll {
+    overflow: hidden;
+  }
+  .logo-wrapper {
+    z-index: 9999;
+    position: absolute;
+  }
+  .logo {
+    text-align: right;
+    padding: .5em;
+    z-index: 999;
+    cursor: pointer !important;
+    right: 10px;
+    position: fixed;
+    width: auto;
+  }
+  .logo-img {
+    width: 100px;
+  }
+
+  .overlay_container {
+    position: relative;
+  }
+  
+  /* Header & Overlay Menu */
+  .menuButton {
+    text-indent: 0;
+    color: #fff;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 36px;
+  }
+  .menuButton:hover {
+    -o-transition:.75s;
+    -ms-transition:.75s;
+    -moz-transition:.75s;
+    -webkit-transition:.75s;
+    transition:.75s;
+  }
+  .menuButton:active {
+    position: relative;
+  }
+  .menu-icons img {
+    width: 5%;
+  }
+  .menu-txt {
+    color: #000;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .menu-txt:hover {
+    color: red;
+  }
+  #overlay-menu {
+    margin: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    position: fixed;
+    bottom: 5%;
+    left: 0px;
+    z-index: 7000;
+  }
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+    z-index: 9009;
+    overflow: scroll;
+  }
+  .overlay nav {
+      width: 100%;
+  
+  }
+  .overlay ul {
+    list-style: none;
+  }
+  .overlay ul li:last-child {
+    margin-bottom: 0;
+  }
+  .overlay ul li a {
+    text-decoration: none;
+    color: $white;
+    font-weight: 700;
+  }
+  .overlay-close {
+    width: 40px;
+    height: 35px;
+    position: fixed;
+    overflow: hidden;
+    border: 0 !important;
+    background-color: transparent !important;
+    z-index: 7000;
+    bottom: 5%;
+    margin: 10px;
+  }
+  .overlay-data {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+  }
+  .overlay-open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  .main-nav {
+    width:calc(100vh - 15px);
+    height: 80px;
+    position:fixed;
+    bottom: 100px;
+    z-index: 9005;
+    color: red;
+    left: 15px;
+    line-height: 35px;
+  
+  }
+  ul.nav li {
+    height:100%;
+    list-style: none;
+    font-family: $akira;
+    font-size: 20px;
+  }
+  ul.nav li a {
+    color: blue;
+    cursor: pointer;
+  }
+  ul.nav li a:hover {
+    text-decoration: none;
+  }
+  ul.nav li a:hover::after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 1px;
+    background: blue;
+  }
+  
+  // Menu Close
+  .menu_group {
+    margin-top: 60px;
+  }
+  .menu_title {
+    
+    margin-bottom: 25px;
+  }
+  
+  // phase1_full_height
+  .left_header {
+    position: relative;
+    width:100%;
+  
+    a {
+      &:hover {
+          text-decoration: none;
+          border-bottom: 0;
+      }
+    }
+  }
+  
+  // Home Link
+  .menu_crown {
+    width: 36px;
+    margin-bottom: 30px;
+    a {
+      text-decoration: none;
+  
+      &:hover {
+          text-decoration: none;
+          border: none;
+      }
+    }
+  }
+  
+  
+  // Collapsed Menu
+  .collapsed_menu_wrapper {
+    display: none;
+    padding-top: 25px;
+
+    ul {
+  
+      padding-top: 5px;
+  
+      li {
+        padding-right: 10px;
+        
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+  
+        a {
+  
+          font-size: 14px;
+          font-style: italic;
+          &:hover {
+            border-bottom: 2px solid white;
+          }
+        }
+        &.themealpha-nav a {
+          
+          color:white;
+          font-size: 14px;
+          font-style: italic;
+  
+          &:hover {
+            border-bottom: 2px solid white;
+          }
+        }
+        
+      }
+  
+    }
+  }
+  
+  .menu_description {
+    color: white;
+    font-size: 16px;
+    padding: 0 0 100px;
+    line-height: 1.6;
+  
+    a {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .all_work_title {
+    position: fixed;
+    top: 22vh;
+    right: -5px;
+    // width: 50px;
+    word-break: break-word;
+    font-size: 10px;
+    z-index: 9999;
+    font-family: $akira;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    background: black;
+    border-radius: 20px;
+    padding: 3px 10px;
+    border: 1px solid;
+    display: none;
+  }
+  
+  // New Hover for Menu
+
+  .js_hover_trigger a {
+    position: relative;
+  
+    &:hover {
+      color: blue;
+    }
+  }
+  
+  // New Overlay Layout
+  .overlay_section {
+    margin-bottom: 75px;
+    max-width: 1150px;
+  }
+  .overlay_section_title {
+    
+    line-height: 1;
+    padding-bottom: 50px;
+  }
+  .overlay-projects-menu {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-bottom: 25px;
+    font-size: 13px;
+  }
+  .overlay_project_single {
+    width: 100%;
+    line-height: 1.2;
+    
+    font-family: $akira;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 35px 5px 0;
+  }
+  .overlay_project_tags {
+    font-family: $akira;
+    text-transform: initial;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+  .overlay_alternate_text a {
+    color: white !important;
+    
+    &:hover {
+      color: red !important;
+    }
+  }
+  .overlay_header_logo a:hover {
+    border-bottom: 0;
+  }
+  .overlay-projects {
+    padding-top: 10px;
+  
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  
+  .overlay-projects-title {
+    font-family: $akira;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }

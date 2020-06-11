@@ -1,0 +1,17 @@
+---
+layout: std
+---
+
+<section class="section welcome">
+    <div class="std_head">Black Lives Matter</div>
+    <div class="std_copy">We took an opportunity to brainstorm some ideas that promote spreading love and sustainability in communities all across the world.   We invite businesses, artists and makers to help us see our initiatives through.</div>
+</section>
+<section class="home_nav">
+    <div class="sm_head">navigation</div>
+    <ul>
+        {% for item in site.data.home-nav %}
+        <li><a href="{{ item.url }}">{{ item.url }}</a></li>
+        {% endfor %}   
+    </ul>
+    {% include cta.html cta-title="Get Started" class="get_started" url="/screen-001" %}
+</section>
