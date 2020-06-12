@@ -7,18 +7,18 @@
   <div class="overlay overlay-data">
   
     <div class="overlay_container clear">
-        <div class="std_head">Black Lives Matter</div>
-        <nav>
-            <div class="sm_head">Navigation</div>
+        <div class="wrapper">
+            <div class="std_head">Black Lives Matter</div>
+            <nav>
+                <div class="sm_head">Navigation</div>
 
-            <ul>
-                <li>Intro</li>
-                <li>Bridging the Gap</li>
-                <li>SVNCRWNS x Sankofa</li>
-                <li>2015. Thug Myth</li>
-                <li>Ideas</li>
-            </ul>
-            
-        </nav>
+                <ul>
+                    {% for item in site.data.home-nav %}
+                    <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+                    {% endfor %}
+                </ul>
+                
+            </nav>
+        </div>
     </div>
   </div>

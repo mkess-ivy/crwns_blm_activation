@@ -1,20 +1,27 @@
 ---
-layout: std
+layout: std-002
 ---
 
-<section class="section">
-    <div class="std_head">Ideas.</div>
-    <div class="std_copy">
-        <p>We have organized a list of ideas that we would like to implement.  We are inviting all that wish to collaborate with us to submit their interest.  Let’s work together to create the change we want to see. </p>
-
-        <p>We’ve started developing these concepts but know that we need an array of folks to help bring these ideas to life. From makers, to other business owners, artists, cultural curators that have robust networks and are great at connecting dots!</p>
-    </div>
-
-    <div class="idea_group">
-        {% include ideas.html %}
-    </div>
-
-    <div class="idea_btn_group">
-        {% include cta.html cta-title="Join Us" class="white_btn" url="/" %}
-    </div>
-</section>
+<div class="wrapper">
+    <section class="section">
+            <div class="std_head">Ideas.</div>
+            
+            <div class="all_groups">
+                <div class="std_copy">
+                    <p>We have organized a list of ideas that we would like to implement.  We are inviting all that wish to collaborate with us to submit their interest.  Let’s work together to create the change we want to see. </p>
+            
+                    <p>We’ve started developing these concepts but know that we need an array of folks to help bring these ideas to life. From makers, to other business owners, artists, cultural curators that have robust networks and are great at connecting dots!</p>
+                </div>
+            
+                <div class="idea_group">
+                    {% include ideas.html %}
+                </div>
+            
+                <div class="idea_btn_group">
+                    {% include cta.html cta-title="Join Us" class="white_btn" url="/" %}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% include blm_pagination.html name1="Previous" url1="/screen-004/"  %}

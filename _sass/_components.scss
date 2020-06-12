@@ -1,32 +1,17 @@
 .wrapper {
-    padding: 15px 15px 100px;
+    padding: 75px 30px 100px;
     position: relative;
-    margin-top: 55px;
-}
+    margin-top: 80px;
+    // z-index: -1;
 
-// Header Component
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 15px;
-}
-.logo {
-    text-align: center;
-    
-    img {
-        width: 35px;
+    &.home {
+        z-index: 0;
+        padding: 30px 20px 30px;
     }
 }
 
-.menu_title {
-    position: absolute;
-    right: 20px;
-    top: 24px;
-}
 
 // Pagination
-
 .pagination_group {
     width: 100%;
     padding: 12px 20px;
@@ -36,6 +21,7 @@ header {
     background: $black;
 }
 
+
 // Video
 video {
     pointer-events: none;
@@ -43,6 +29,7 @@ video {
 video::-webkit-media-controls-start-playback-button {
     display: none;
 }
+
 
 // Toggle
 .content {
@@ -58,30 +45,121 @@ ul.accordion {
     padding: 0;
   
     .inner {
-        padding-left: 1em;
+        // padding-left: 1em;
+        padding-inline-start: 0;
         overflow: hidden;
         display: none;
+        font-family: $body-font;
       
         &.show {
           /*display: block;*/
         }
+
+        li {
+            @extend .std_copy;
+            list-style: none;
+            padding-bottom: 20px;
+
+            &:last-child {
+                padding-bottom: 50px;
+            }
+            
+        }
     }
   
-    li {
+    li.accordion_wrapper {
         margin: .5em 0;
+        border-bottom: 1px solid white;
+        
+
+        &:last-child {
+            border-bottom: 0;
+        }
       
         a.toggle {
             width: 100%;
             display: block;
             background: rgba(0,0,0,0.78);
             color: #fefefe;
-            padding: .75em;
+            padding: 1.5em 0;
             border-radius: 0.15em;
             transition: background .3s ease;
+            font-size: 22px;
           
             &:hover {
                 background: rgba(0, 0, 0, 0.9);
+                text-decoration: none;
+                color: $yellow;
             }
         }
     }
+}
+
+
+// BTN
+.btn_wrapper {
+    text-align: center;
+}
+.btn {
+    color: black;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    div {
+        background: $yellow;
+        width: 200px;
+        padding: 8px 10px;
+        border-radius: 50px;
+        margin: auto;
+        text-align: center;
+
+        &:hover {
+            background: $white;
+            text-decoration: none;
+            color: $black;
+        }
+    }
+}
+
+
+// Animated Numbers
+.animated_numbers {
+    font-size: 100px;
+    text-align: center;
+}
+
+
+// Pagination
+.pagination {
+    a {
+        color: white;
+
+        &:hover {
+            color: $yellow;
+            text-decoration: none;
+        }
+    }
+}
+
+
+// Content
+.all_groups {
+    padding-top: 100px;
+
+    .group {
+
+    }
+}
+.btg_video {
+    margin: 100px 0 150px;
+}
+.group {
+    padding-bottom: 25px;
+}
+
+// Ideas
+.idea_group {
+    padding: 60px 0 75px;
 }
