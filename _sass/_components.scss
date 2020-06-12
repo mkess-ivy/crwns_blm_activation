@@ -101,26 +101,49 @@ ul.accordion {
     text-align: center;
 }
 .btn {
-    color: black;
+    &.yellow_btn {
+        color: black;
+
+        div {
+            background: $yellow;
+            width: 200px;
+            padding: 8px 10px;
+            border-radius: 50px;
+            margin: auto;
+            text-align: center;
+    
+            &:hover {
+                background: $white;
+                text-decoration: none;
+                color: $black;
+                transition: 1s;
+            }
+        }
+    }
+    &.white_btn {
+        color: $white;
+
+        div {
+            background: transparent;
+            width: 240px;
+            padding: 11px 15px;
+            border-radius: 50px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid white;
+    
+            &:hover {
+                background: $white;
+                text-decoration: none;
+                color: $black;
+                transition: 1s;
+            }
+        }
+    }
 
     &:hover {
         text-decoration: none;
-    }
-
-    div {
-        background: $yellow;
-        width: 200px;
-        padding: 8px 10px;
-        border-radius: 50px;
-        margin: auto;
-        text-align: center;
-
-        &:hover {
-            background: $white;
-            text-decoration: none;
-            color: $black;
-        }
-    }
+    }   
 }
 
 
@@ -147,10 +170,6 @@ ul.accordion {
 // Content
 .all_groups {
     padding-top: 100px;
-
-    .group {
-
-    }
 }
 .btg_video {
     margin: 100px 0 150px;
@@ -159,7 +178,46 @@ ul.accordion {
     padding-bottom: 25px;
 }
 
+
 // Ideas
 .idea_group {
     padding: 60px 0 75px;
+}
+
+// Screen 003
+.project_img {
+    padding-top: 75px;
+}
+.project_number {
+    text-align: center;
+    font-size: 50px;
+}
+.project_list, .collab_list {
+    padding-inline-start: 15px;
+    li {
+        list-style-type: '– ';
+    }
+}
+
+// Screen 004
+.thug_section {
+    background-image: url(/assets/thug.jpg);
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project_img {
+    &.screen_004 {
+        text-align: center;
+        padding: 55px 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+.thug_desc {
+    padding-bottom: 25px;
 }

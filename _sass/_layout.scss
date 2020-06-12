@@ -5,9 +5,9 @@
     line-height: 36px;
     letter-spacing: 0.34;
 
-    &.home {
-        // font-size: 36px;
-        // line-height: 30px;
+    &.special {
+        font-size: 36px;
+        line-height: 30px;
     }
 }
 .std_copy {
@@ -24,6 +24,17 @@
 .sm_head {
     font-size: 14px;
     letter-spacing: 0.5;
+
+    &.menu_overlay {
+        padding-bottom: 20px;
+    }
+    &.screen_003 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    &.screen_004 {
+        text-align: center;
+    }
 }
 .centered {
     text-align: center;
@@ -73,7 +84,7 @@ header {
 
         li {    
             padding-bottom: 10px;
-            font-size: 18px;
+            // font-size: 18px;
 
             a {
                 color: white;

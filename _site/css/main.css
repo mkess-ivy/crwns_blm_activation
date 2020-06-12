@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper { padding: 75px 30px 100px; position: relative; margin-top: 80px; }
 
 .wrapper.home { z-index: 0; padding: 30px 20px 30px; }
@@ -32,13 +33,19 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .btn_wrapper { text-align: center; }
 
-.btn { color: black; }
+.btn.yellow_btn { color: black; }
+
+.btn.yellow_btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; margin: auto; text-align: center; }
+
+.btn.yellow_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
+
+.btn.white_btn { color: #FFF; }
+
+.btn.white_btn div { background: transparent; width: 240px; padding: 11px 15px; border-radius: 50px; margin: auto; text-align: center; border: 1px solid white; }
+
+.btn.white_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
 
 .btn:hover { text-decoration: none; }
-
-.btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; margin: auto; text-align: center; }
-
-.btn div:hover { background: #FFF; text-decoration: none; color: #000; }
 
 .animated_numbers { font-size: 100px; text-align: center; }
 
@@ -53,6 +60,22 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 .group { padding-bottom: 25px; }
 
 .idea_group { padding: 60px 0 75px; }
+
+.project_img { padding-top: 75px; }
+
+.project_number { text-align: center; font-size: 50px; }
+
+.project_list, .collab_list { padding-inline-start: 15px; }
+
+.project_list li, .collab_list li { list-style-type: '– '; }
+
+.thug_section { background-image: url(/assets/thug.jpg); height: 100vh; background-size: cover; width: 100%; background-position: center; background-repeat: no-repeat; }
+
+.project_img.screen_004 { text-align: center; padding: 55px 0; }
+
+.project_img.screen_004 img { width: 100%; }
+
+.thug_desc { padding-bottom: 25px; }
 
 @font-face { font-family: "AkiraExpanded"; src: url("/assets/AkiraExpanded.otf") format("opentype"); }
 
@@ -98,13 +121,19 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .btn_wrapper { text-align: center; }
 
-.btn { color: black; }
+.btn.yellow_btn { color: black; }
+
+.btn.yellow_btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; margin: auto; text-align: center; }
+
+.btn.yellow_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
+
+.btn.white_btn { color: #FFF; }
+
+.btn.white_btn div { background: transparent; width: 240px; padding: 11px 15px; border-radius: 50px; margin: auto; text-align: center; border: 1px solid white; }
+
+.btn.white_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
 
 .btn:hover { text-decoration: none; }
-
-.btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; margin: auto; text-align: center; }
-
-.btn div:hover { background: #FFF; text-decoration: none; color: #000; }
 
 .animated_numbers { font-size: 100px; text-align: center; }
 
@@ -120,13 +149,37 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .idea_group { padding: 60px 0 75px; }
 
+.project_img { padding-top: 75px; }
+
+.project_number { text-align: center; font-size: 50px; }
+
+.project_list, .collab_list { padding-inline-start: 15px; }
+
+.project_list li, .collab_list li { list-style-type: '– '; }
+
+.thug_section { background-image: url(/assets/thug.jpg); height: 100vh; background-size: cover; width: 100%; background-position: center; background-repeat: no-repeat; }
+
+.project_img.screen_004 { text-align: center; padding: 55px 0; }
+
+.project_img.screen_004 img { width: 100%; }
+
+.thug_desc { padding-bottom: 25px; }
+
 .std_head { font-size: 44px; text-align: center; line-height: 36px; letter-spacing: 0.34; }
+
+.std_head.special { font-size: 36px; line-height: 30px; }
 
 .std_copy, ul.accordion .inner li { font-size: 18px; line-height: 26px; letter-spacing: 0.2; font-family: "Montserrat", sans-serif; font-weight: 300; }
 
 .std_copy a, ul.accordion .inner li a { color: white; }
 
 .sm_head { font-size: 14px; letter-spacing: 0.5; }
+
+.sm_head.menu_overlay { padding-bottom: 20px; }
+
+.sm_head.screen_003 { text-align: center; padding-bottom: 20px; }
+
+.sm_head.screen_004 { text-align: center; }
 
 .centered { text-align: center; }
 
@@ -144,7 +197,7 @@ header { position: fixed; top: 0; width: 100%; padding: 30px 15px 15px; backgrou
 
 .home_group ul { list-style: none; text-align: center; margin-block-start: 0; margin-block-end: 0; padding-inline-start: 0; padding-top: 30px; }
 
-.home_group ul li { padding-bottom: 10px; font-size: 18px; }
+.home_group ul li { padding-bottom: 10px; }
 
 .home_group ul li a { color: white; font-size: 18px; }
 
@@ -274,5 +327,11 @@ ul.nav li a:hover::after { content: ''; display: block; width: auto; height: 1px
 .overlay-projects:last-child { border-right: 0; }
 
 .overlay-projects-title { font-family: "AkiraExpanded", "Montserrat", sans-serif; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 20px; line-height: 1; padding-bottom: 10px; margin-top: 10px; }
+
+nav { padding-top: 75px; text-align: center; }
+
+nav ul { padding-inline-start: 0; }
+
+nav ul li { font-size: 28px; line-height: 26px; padding-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */
