@@ -1,0 +1,14 @@
+$on-small               : 375px;
+$on-palm                : 420px; 
+
+// Media Query Mixins
+@mixin small {
+  @media screen and (min-width: #{$on-small}) {
+    @content;
+  }
+}
+@mixin palm {
+  @media screen and (min-width: #{$on-palm}) {
+    @content;
+  }
+}

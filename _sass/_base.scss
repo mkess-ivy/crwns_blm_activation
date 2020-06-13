@@ -1,4 +1,5 @@
 @import "variables";
+@import "media_queries";
 @import "components";
 
 @font-face {
@@ -24,8 +25,11 @@ a {
     }
 
     &.inline_link {
+        color: $white; 
+        text-decoration: underline !important;
+        
         &:hover {
-            text-decoration: underline !important;
+            color: $yellow;
         }
     }
 }

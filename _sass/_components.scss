@@ -8,17 +8,25 @@
         z-index: 0;
         padding: 30px 20px 30px;
     }
+
+    @include palm {
+        display: none;
+    }
 }
 
 
 // Pagination
 .pagination_group {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 20px 20px;
     border-top: 1px solid;
     position: fixed;
     bottom: 0;
     background: $black;
+
+    @include palm {
+        display: none;
+    }
 }
 
 
@@ -101,6 +109,11 @@ ul.accordion {
     text-align: center;
 }
 .btn {
+    font-size: 14px;
+    display: block;
+    
+    padding: 50px 0;
+
     &.yellow_btn {
         color: black;
 
@@ -109,8 +122,8 @@ ul.accordion {
             width: 200px;
             padding: 8px 10px;
             border-radius: 50px;
-            margin: auto;
             text-align: center;
+            margin: auto;
     
             &:hover {
                 background: $white;
@@ -128,9 +141,9 @@ ul.accordion {
             width: 240px;
             padding: 11px 15px;
             border-radius: 50px;
-            margin: auto;
             text-align: center;
             border: 1px solid white;
+            margin: auto;
     
             &:hover {
                 background: $white;
@@ -217,7 +230,27 @@ ul.accordion {
             width: 100%;
         }
     }
+
+    img {
+        width: 100%;
+    }
 }
 .thug_desc {
     padding-bottom: 25px;
+}
+
+// Bridging the Gap 
+.btg_video {
+    img {
+        width: 100%;
+    }
+}
+
+// Marquee
+.marquee_group {
+    background: $white;
+    color: $black;
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
 }

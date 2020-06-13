@@ -1,13 +1,23 @@
 // Global
 .std_head {
-    font-size: 44px;
+    font-size: 36px;
     text-align: center;
-    line-height: 36px;
+    line-height: 1;
     letter-spacing: 0.34;
 
     &.special {
-        font-size: 36px;
-        line-height: 30px;
+        font-size: 28px;
+        line-height: 24px;
+
+        @include small {
+            font-size: 36px;
+            line-height: 30px;
+        }
+    }
+
+    @include small {
+        font-size: 44px; 
+        // line-height: 44px;  
     }
 }
 .std_copy {
@@ -27,6 +37,8 @@
 
     &.menu_overlay {
         padding-bottom: 20px;
+        letter-spacing: 2px;
+        font-size: 12px;
     }
     &.screen_003 {
         text-align: center;
@@ -35,6 +47,8 @@
     &.screen_004 {
         text-align: center;
     }
+
+    
 }
 .centered {
     text-align: center;
@@ -49,11 +63,17 @@ header {
     padding: 30px 15px 15px;
     background: $black;
     z-index: 1;
+
+    @include palm {
+        display: none;
+    }
 }
 .logo {
     text-align: center;
     position: relative;
     z-index: 9999;
+    width: 25%;
+    margin: auto;
     
     img {
         width: 30px;
@@ -70,7 +90,7 @@ header {
 .home_group {
     padding: 0 0 50px;
 
-    &:last-child {
+    &.last {
         padding-bottom: 0 !important;
     }
 
@@ -96,4 +116,24 @@ header {
 .home_desc {
     margin-top: 50px;
     text-align: center;
+}
+
+// Big Devices
+.big_devices {
+    padding-top: 50px;
+    margin: auto;
+    width: 100%;
+    line-height: 1;
+    font-size: 16px;
+    font-family: $body-font;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.big_device_group {
+    display: none;
+
+    @include palm {
+        display: block;
+    }
 }

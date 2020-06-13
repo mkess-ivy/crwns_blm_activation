@@ -3,7 +3,11 @@
 
 .wrapper.home { z-index: 0; padding: 30px 20px 30px; }
 
-.pagination_group { width: 100%; padding: 12px 20px; border-top: 1px solid; position: fixed; bottom: 0; background: #000; }
+@media screen and (min-width: 420px) { .wrapper { display: none; } }
+
+.pagination_group { width: 100%; padding: 12px 20px 20px; border-top: 1px solid; position: fixed; bottom: 0; background: #000; }
+
+@media screen and (min-width: 420px) { .pagination_group { display: none; } }
 
 video { pointer-events: none; }
 
@@ -33,15 +37,17 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .btn_wrapper { text-align: center; }
 
+.btn { font-size: 14px; display: block; padding: 50px 0; }
+
 .btn.yellow_btn { color: black; }
 
-.btn.yellow_btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; margin: auto; text-align: center; }
+.btn.yellow_btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; text-align: center; margin: auto; }
 
 .btn.yellow_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
 
 .btn.white_btn { color: #FFF; }
 
-.btn.white_btn div { background: transparent; width: 240px; padding: 11px 15px; border-radius: 50px; margin: auto; text-align: center; border: 1px solid white; }
+.btn.white_btn div { background: transparent; width: 240px; padding: 11px 15px; border-radius: 50px; text-align: center; border: 1px solid white; margin: auto; }
 
 .btn.white_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
 
@@ -75,7 +81,13 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .project_img.screen_004 img { width: 100%; }
 
+.project_img img { width: 100%; }
+
 .thug_desc { padding-bottom: 25px; }
+
+.btg_video img { width: 100%; }
+
+.marquee_group { background: #FFF; color: #000; position: absolute; bottom: -40px; width: 100%; }
 
 @font-face { font-family: "AkiraExpanded"; src: url("/assets/AkiraExpanded.otf") format("opentype"); }
 
@@ -85,13 +97,19 @@ p { margin-block-end: 2em; }
 
 a:hover { text-decoration: none !important; color: #C8F330 !important; }
 
-a.inline_link:hover { text-decoration: underline !important; }
+a.inline_link { color: #FFF; text-decoration: underline !important; }
+
+a.inline_link:hover { color: #C8F330; }
 
 .wrapper { padding: 75px 30px 100px; position: relative; margin-top: 80px; }
 
 .wrapper.home { z-index: 0; padding: 30px 20px 30px; }
 
-.pagination_group { width: 100%; padding: 12px 20px; border-top: 1px solid; position: fixed; bottom: 0; background: #000; }
+@media screen and (min-width: 420px) { .wrapper { display: none; } }
+
+.pagination_group { width: 100%; padding: 12px 20px 20px; border-top: 1px solid; position: fixed; bottom: 0; background: #000; }
+
+@media screen and (min-width: 420px) { .pagination_group { display: none; } }
 
 video { pointer-events: none; }
 
@@ -121,15 +139,17 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .btn_wrapper { text-align: center; }
 
+.btn { font-size: 14px; display: block; padding: 50px 0; }
+
 .btn.yellow_btn { color: black; }
 
-.btn.yellow_btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; margin: auto; text-align: center; }
+.btn.yellow_btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; text-align: center; margin: auto; }
 
 .btn.yellow_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
 
 .btn.white_btn { color: #FFF; }
 
-.btn.white_btn div { background: transparent; width: 240px; padding: 11px 15px; border-radius: 50px; margin: auto; text-align: center; border: 1px solid white; }
+.btn.white_btn div { background: transparent; width: 240px; padding: 11px 15px; border-radius: 50px; text-align: center; border: 1px solid white; margin: auto; }
 
 .btn.white_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
 
@@ -163,11 +183,21 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .project_img.screen_004 img { width: 100%; }
 
+.project_img img { width: 100%; }
+
 .thug_desc { padding-bottom: 25px; }
 
-.std_head { font-size: 44px; text-align: center; line-height: 36px; letter-spacing: 0.34; }
+.btg_video img { width: 100%; }
 
-.std_head.special { font-size: 36px; line-height: 30px; }
+.marquee_group { background: #FFF; color: #000; position: absolute; bottom: -40px; width: 100%; }
+
+.std_head { font-size: 36px; text-align: center; line-height: 1; letter-spacing: 0.34; }
+
+.std_head.special { font-size: 28px; line-height: 24px; }
+
+@media screen and (min-width: 375px) { .std_head.special { font-size: 36px; line-height: 30px; } }
+
+@media screen and (min-width: 375px) { .std_head { font-size: 44px; } }
 
 .std_copy, ul.accordion .inner li { font-size: 18px; line-height: 26px; letter-spacing: 0.2; font-family: "Montserrat", sans-serif; font-weight: 300; }
 
@@ -175,7 +205,7 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .sm_head { font-size: 14px; letter-spacing: 0.5; }
 
-.sm_head.menu_overlay { padding-bottom: 20px; }
+.sm_head.menu_overlay { padding-bottom: 20px; letter-spacing: 2px; font-size: 12px; }
 
 .sm_head.screen_003 { text-align: center; padding-bottom: 20px; }
 
@@ -185,7 +215,9 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 header { position: fixed; top: 0; width: 100%; padding: 30px 15px 15px; background: #000; z-index: 1; }
 
-.logo { text-align: center; position: relative; z-index: 9999; }
+@media screen and (min-width: 420px) { header { display: none; } }
+
+.logo { text-align: center; position: relative; z-index: 9999; width: 25%; margin: auto; }
 
 .logo img { width: 30px; }
 
@@ -193,7 +225,7 @@ header { position: fixed; top: 0; width: 100%; padding: 30px 15px 15px; backgrou
 
 .home_group { padding: 0 0 50px; }
 
-.home_group:last-child { padding-bottom: 0 !important; }
+.home_group.last { padding-bottom: 0 !important; }
 
 .home_group ul { list-style: none; text-align: center; margin-block-start: 0; margin-block-end: 0; padding-inline-start: 0; padding-top: 30px; }
 
@@ -202,6 +234,12 @@ header { position: fixed; top: 0; width: 100%; padding: 30px 15px 15px; backgrou
 .home_group ul li a { color: white; font-size: 18px; }
 
 .home_desc { margin-top: 50px; text-align: center; }
+
+.big_devices { padding-top: 50px; margin: auto; width: 100%; line-height: 1; font-size: 16px; font-family: "Montserrat", sans-serif; font-weight: 600; text-align: center; text-transform: uppercase; }
+
+.big_device_group { display: none; }
+
+@media screen and (min-width: 420px) { .big_device_group { display: block; } }
 
 .hamburger { background: white; }
 
@@ -328,10 +366,16 @@ ul.nav li a:hover::after { content: ''; display: block; width: auto; height: 1px
 
 .overlay-projects-title { font-family: "AkiraExpanded", "Montserrat", sans-serif; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; font-size: 20px; line-height: 1; padding-bottom: 10px; margin-top: 10px; }
 
-nav { padding-top: 75px; text-align: center; }
+nav { text-align: center; }
 
 nav ul { padding-inline-start: 0; }
 
-nav ul li { font-size: 28px; line-height: 26px; padding-bottom: 10px; }
+nav ul li { font-size: 24px; line-height: 1; padding-bottom: 20px; }
+
+@media screen and (min-width: 375px) { nav ul li { font-size: 28px; } }
+
+.overlay_menu { color: #C8F330; font-size: 24px; }
+
+@media screen and (min-width: 375px) { .overlay_menu { font-size: 28px; } }
 
 /*# sourceMappingURL=main.css.map */
