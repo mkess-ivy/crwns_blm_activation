@@ -137,3 +137,12 @@ header {
         display: block;
     }
 }
+
+// Misc
+.support {
+    font-family: $body-font;
+    text-align: center;
+    font-size: 9px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
