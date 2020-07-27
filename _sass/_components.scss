@@ -6,7 +6,7 @@
 
     &.home {
         z-index: 0;
-        padding: 15px 20px 30px;
+        padding: 10px 20px 30px;
     }
 
     @include palm {
@@ -112,7 +112,7 @@ ul.accordion {
     font-size: 14px;
     display: block;
     
-    padding: 30px 0;
+    padding: 40px 0 30px;
 
     &.yellow_btn {
         color: black;

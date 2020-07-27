@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .wrapper { padding: 75px 30px 100px; position: relative; margin-top: 80px; }
 
-.wrapper.home { z-index: 0; padding: 15px 20px 30px; }
+.wrapper.home { z-index: 0; padding: 10px 20px 30px; }
 
 @media screen and (min-width: 420px) { .wrapper { display: none; } }
 
@@ -37,7 +37,7 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .btn_wrapper { text-align: center; }
 
-.btn { font-size: 14px; display: block; padding: 30px 0; }
+.btn { font-size: 14px; display: block; padding: 40px 0 30px; }
 
 .btn.yellow_btn { color: black; }
 
@@ -103,7 +103,7 @@ a.inline_link:hover { color: #C8F330; }
 
 .wrapper { padding: 75px 30px 100px; position: relative; margin-top: 80px; }
 
-.wrapper.home { z-index: 0; padding: 15px 20px 30px; }
+.wrapper.home { z-index: 0; padding: 10px 20px 30px; }
 
 @media screen and (min-width: 420px) { .wrapper { display: none; } }
 
@@ -139,7 +139,7 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .btn_wrapper { text-align: center; }
 
-.btn { font-size: 14px; display: block; padding: 30px 0; }
+.btn { font-size: 14px; display: block; padding: 40px 0 30px; }
 
 .btn.yellow_btn { color: black; }
 
