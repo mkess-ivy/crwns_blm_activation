@@ -1,7 +1,7 @@
 .wrapper {
     padding: 75px 30px 100px;
     position: relative;
-    margin-top: 80px;
+    // margin-top: 80px;
     // z-index: -1;
 
     &.home {
@@ -303,4 +303,12 @@ ul.accordion {
     text-transform: uppercase;
     font-size: 14px;
     color: white;
+}
+
+.blo {
+    padding-top: 50px !important;
+
+    @include tablet {
+        padding-top: 0;
+    }
 }

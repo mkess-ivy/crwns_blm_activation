@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.wrapper { padding: 75px 30px 100px; position: relative; margin-top: 80px; }
+.wrapper { padding: 75px 30px 100px; position: relative; }
 
 .wrapper.home { z-index: 0; padding: 0px 20px 0 30px; }
 
@@ -102,6 +102,10 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 @media screen and (min-width: 1024px) { .screen005-gap { padding-bottom: 4vh; } }
 
 .fixed_logo { position: absolute; top: 10px; right: 40px; text-transform: uppercase; font-size: 14px; color: white; }
+
+.blo { padding-top: 50px !important; }
+
+@media screen and (min-width: 767px) { .blo { padding-top: 0; } }
 
 @font-face { font-family: "AkiraExpanded"; src: url("/assets/AkiraExpanded.otf") format("opentype"); }
 
@@ -120,7 +124,7 @@ a.inline_link { color: #FFF; text-decoration: underline !important; }
 
 a.inline_link:hover { color: #C8F330; }
 
-.wrapper { padding: 75px 30px 100px; position: relative; margin-top: 80px; }
+.wrapper { padding: 75px 30px 100px; position: relative; }
 
 .wrapper.home { z-index: 0; padding: 0px 20px 0 30px; }
 
@@ -224,6 +228,10 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .fixed_logo { position: absolute; top: 10px; right: 40px; text-transform: uppercase; font-size: 14px; color: white; }
 
+.blo { padding-top: 50px !important; }
+
+@media screen and (min-width: 767px) { .blo { padding-top: 0; } }
+
 .std_head { font-size: 36px; text-align: center; line-height: 1; letter-spacing: 0.34; }
 
 .std_head.special { font-size: 28px; line-height: 24px; }
@@ -236,9 +244,11 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 @media screen and (min-width: 1024px) { .std_head.overlayheader { font-size: 75px; } }
 
-@media screen and (min-width: 375px) { .std_head { font-size: 44px; } }
+@media screen and (min-width: 420px) { .std_head { font-size: 44px; } }
 
-@media screen and (min-width: 767px) { .std_head { font-size: 60px; line-height: 0.9; } }
+@media screen and (min-width: 767px) { .std_head { font-size: 44px; line-height: 0.9; } }
+
+@media screen and (min-width: 1024px) { .std_head { font-size: 60px; } }
 
 @media screen and (min-width: 1024px) { .std_head { font-size: 65px; } }
 
@@ -270,13 +280,15 @@ header { position: fixed; top: 0; width: 100%; padding: 30px 15px 15px; backgrou
 
 .home_group.last { padding-bottom: 0 !important; }
 
-.home_group ul { list-style: none; text-align: center; margin-block-start: 0; margin-block-end: 0; padding-inline-start: 0; padding-top: 30px; }
+.home_group ul { list-style: none; text-align: center; margin-block-start: 0; margin-block-end: 0; padding-inline-start: 0; padding-top: 30px; width: 100%; }
 
 .home_group ul li { padding-bottom: 10px; }
 
 .home_group ul li a { color: white; font-size: 18px; }
 
-@media screen and (min-width: 767px) { .home_group ul li a { font-size: 26px; } }
+@media screen and (min-width: 767px) { .home_group ul li a { font-size: 20px; } }
+
+@media screen and (min-width: 1024px) { .home_group ul li a { font-size: 26px; } }
 
 .home_desc { margin-top: 50px; text-align: center; }
 
