@@ -5,20 +5,22 @@
 </button>
   
   <div class="overlay overlay-data">
-  
-    <div class="overlay_container clear">
-        <div class="wrapper">
-            
-            <nav>
-                <div class="sm_head menu_overlay">Navigation</div>
-
-                <ul>
-                    {% for item in site.data.home-nav %}
-                    <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-                    {% endfor %}
-                </ul>
+    <div class="frow centered">
+        <div class="overlay_container clear">
+            <div class="wrapper">
                 
-            </nav>
+                <nav>
+                    <div class="std_head overlayheader">Black Love Offering</div>
+                    <div class="sm_head menu_overlay">Navigation</div>
+
+                    <ul>
+                        {% for item in site.data.home-nav %}
+                        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    
+                </nav>
+            </div>
         </div>
     </div>
   </div>

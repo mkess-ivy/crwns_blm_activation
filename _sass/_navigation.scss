@@ -390,6 +390,9 @@
         @include small {
           font-size: 28px;
         }
+        @include tablet {
+          font-size: 34px;
+        }
       }
     }
   }

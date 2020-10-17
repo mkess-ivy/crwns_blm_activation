@@ -1,5 +1,8 @@
 $on-small               : 375px;
-$on-palm                : 420px; 
+$on-palm                : 420px;
+$on-tablet              : 767px; 
+$on-laptop              : 1024px;
+$on-desktop              : 1024px; 
 
 // Media Query Mixins
 @mixin small {
@@ -9,6 +12,22 @@ $on-palm                : 420px;
 }
 @mixin palm {
   @media screen and (min-width: #{$on-palm}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: #{$on-tablet}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: #{$on-laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$on-desktop}) {
     @content;
   }
 }

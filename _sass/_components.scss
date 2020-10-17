@@ -6,11 +6,23 @@
 
     &.home {
         z-index: 0;
-        padding: 10px 20px 30px;
+        padding: 0px 20px 0 30px;
+
+    }
+    &.screen005-wrap {
+        @include laptop {
+            max-width: 400px;
+        }
+    }
+    @include tablet {
+        max-width:500px;
+        margin: auto;
+        padding: 0 20px 0 30px;
     }
 
-    @include palm {
-        display: none;
+    @include laptop {
+        // display: none;
+        max-width: 650px;
     }
 }
 
@@ -24,8 +36,8 @@
     bottom: 0;
     background: $black;
 
-    @include palm {
-        display: none;
+    @include laptop {
+        // display: none;
     }
 }
 
@@ -124,6 +136,12 @@ ul.accordion {
             border-radius: 50px;
             text-align: center;
             margin: auto;
+
+            @include tablet {
+                width: 220px;
+                padding: 12px 10px; 
+                font-size: 14px;
+            }
     
             &:hover {
                 background: $white;
@@ -183,6 +201,10 @@ ul.accordion {
 // Content
 .all_groups {
     padding-top: 100px;
+
+    @include tablet {
+        padding-top:30px;
+    }
 }
 .btg_video {
     margin: 100px 0 150px;
@@ -254,4 +276,31 @@ ul.accordion {
     bottom: 0px;
     width: 100%;
     font-size: 12px;
+}
+
+// Screen 002
+.gap {
+    @include tablet {
+        padding-top: 20vh;
+        padding-bottom: 10vh;
+    }
+}
+.screen005-gap {
+    @include tablet {
+        padding-top: 12vh;
+        padding-bottom: 10vh;
+    }
+    @include laptop {
+        padding-bottom: 4vh;
+    }
+}
+
+//  Logo
+.fixed_logo {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
 }

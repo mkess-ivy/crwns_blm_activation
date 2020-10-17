@@ -1,13 +1,15 @@
 @charset "UTF-8";
 .wrapper { padding: 75px 30px 100px; position: relative; margin-top: 80px; }
 
-.wrapper.home { z-index: 0; padding: 10px 20px 30px; }
+.wrapper.home { z-index: 0; padding: 0px 20px 0 30px; }
 
-@media screen and (min-width: 420px) { .wrapper { display: none; } }
+@media screen and (min-width: 1024px) { .wrapper.screen005-wrap { max-width: 400px; } }
+
+@media screen and (min-width: 767px) { .wrapper { max-width: 500px; margin: auto; padding: 0 20px 0 30px; } }
+
+@media screen and (min-width: 1024px) { .wrapper { max-width: 650px; } }
 
 .pagination_group { width: 100%; padding: 12px 20px 20px; border-top: 1px solid; position: fixed; bottom: 0; background: #000; }
-
-@media screen and (min-width: 420px) { .pagination_group { display: none; } }
 
 video { pointer-events: none; }
 
@@ -43,6 +45,8 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .btn.yellow_btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; text-align: center; margin: auto; }
 
+@media screen and (min-width: 767px) { .btn.yellow_btn div { width: 220px; padding: 12px 10px; font-size: 14px; } }
+
 .btn.yellow_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
 
 .btn.white_btn { color: #FFF; }
@@ -60,6 +64,8 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 .pagination a:hover { color: #C8F330; text-decoration: none; }
 
 .all_groups { padding-top: 100px; }
+
+@media screen and (min-width: 767px) { .all_groups { padding-top: 30px; } }
 
 .btg_video { margin: 100px 0 150px; }
 
@@ -89,11 +95,24 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .marquee_group { background: #FFF; color: #000; position: absolute; bottom: 0px; width: 100%; font-size: 12px; }
 
+@media screen and (min-width: 767px) { .gap { padding-top: 20vh; padding-bottom: 10vh; } }
+
+@media screen and (min-width: 767px) { .screen005-gap { padding-top: 12vh; padding-bottom: 10vh; } }
+
+@media screen and (min-width: 1024px) { .screen005-gap { padding-bottom: 4vh; } }
+
+.fixed_logo { position: absolute; top: 10px; right: 40px; text-transform: uppercase; font-size: 14px; color: white; }
+
 @font-face { font-family: "AkiraExpanded"; src: url("/assets/AkiraExpanded.otf") format("opentype"); }
 
-body { background: #000; color: #FFF !important; font-family: "AkiraExpanded", "Montserrat", sans-serif; font-size: 16px; }
+body { background: #000; color: #FFF !important; font-family: "AkiraExpanded", "Montserrat", sans-serif; font-size: 16px; /** Page Load Transition */ animation: fadeInAnimation ease 3s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+
+@keyframes fadeInAnimation { 0% { opacity: 0; }
+  100% { opacity: 1; } }
 
 p { margin-block-end: 2em; }
+
+p:last-child { margin-block-end: 0; }
 
 a:hover { text-decoration: none !important; color: #C8F330 !important; }
 
@@ -103,13 +122,15 @@ a.inline_link:hover { color: #C8F330; }
 
 .wrapper { padding: 75px 30px 100px; position: relative; margin-top: 80px; }
 
-.wrapper.home { z-index: 0; padding: 10px 20px 30px; }
+.wrapper.home { z-index: 0; padding: 0px 20px 0 30px; }
 
-@media screen and (min-width: 420px) { .wrapper { display: none; } }
+@media screen and (min-width: 1024px) { .wrapper.screen005-wrap { max-width: 400px; } }
+
+@media screen and (min-width: 767px) { .wrapper { max-width: 500px; margin: auto; padding: 0 20px 0 30px; } }
+
+@media screen and (min-width: 1024px) { .wrapper { max-width: 650px; } }
 
 .pagination_group { width: 100%; padding: 12px 20px 20px; border-top: 1px solid; position: fixed; bottom: 0; background: #000; }
-
-@media screen and (min-width: 420px) { .pagination_group { display: none; } }
 
 video { pointer-events: none; }
 
@@ -145,6 +166,8 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .btn.yellow_btn div { background: #C8F330; width: 200px; padding: 8px 10px; border-radius: 50px; text-align: center; margin: auto; }
 
+@media screen and (min-width: 767px) { .btn.yellow_btn div { width: 220px; padding: 12px 10px; font-size: 14px; } }
+
 .btn.yellow_btn div:hover { background: #FFF; text-decoration: none; color: #000; transition: 1s; }
 
 .btn.white_btn { color: #FFF; }
@@ -162,6 +185,8 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 .pagination a:hover { color: #C8F330; text-decoration: none; }
 
 .all_groups { padding-top: 100px; }
+
+@media screen and (min-width: 767px) { .all_groups { padding-top: 30px; } }
 
 .btg_video { margin: 100px 0 150px; }
 
@@ -191,21 +216,41 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 
 .marquee_group { background: #FFF; color: #000; position: absolute; bottom: 0px; width: 100%; font-size: 12px; }
 
+@media screen and (min-width: 767px) { .gap { padding-top: 20vh; padding-bottom: 10vh; } }
+
+@media screen and (min-width: 767px) { .screen005-gap { padding-top: 12vh; padding-bottom: 10vh; } }
+
+@media screen and (min-width: 1024px) { .screen005-gap { padding-bottom: 4vh; } }
+
+.fixed_logo { position: absolute; top: 10px; right: 40px; text-transform: uppercase; font-size: 14px; color: white; }
+
 .std_head { font-size: 36px; text-align: center; line-height: 1; letter-spacing: 0.34; }
 
 .std_head.special { font-size: 28px; line-height: 24px; }
 
 @media screen and (min-width: 375px) { .std_head.special { font-size: 36px; line-height: 30px; } }
 
+@media screen and (min-width: 1024px) { .std_head.home { padding-top: 50px; } }
+
+.std_head.overlayheader { color: #C8F330; }
+
+@media screen and (min-width: 1024px) { .std_head.overlayheader { font-size: 75px; } }
+
 @media screen and (min-width: 375px) { .std_head { font-size: 44px; } }
 
-.std_copy, ul.accordion .inner li { font-size: 18px; line-height: 26px; letter-spacing: 0.2; font-family: "Montserrat", sans-serif; font-weight: 300; }
+@media screen and (min-width: 767px) { .std_head { font-size: 60px; line-height: 0.9; } }
+
+@media screen and (min-width: 1024px) { .std_head { font-size: 65px; } }
+
+.std_copy, ul.accordion .inner li { font-size: 18px; line-height: 1.4; letter-spacing: 0.2; font-family: "Montserrat", sans-serif; font-weight: 300; }
 
 .std_copy a, ul.accordion .inner li a { color: white; }
 
+@media screen and (min-width: 1024px) { .std_copy, ul.accordion .inner li { font-size: 22px; } }
+
 .sm_head { font-size: 14px; letter-spacing: 0.5; }
 
-.sm_head.menu_overlay { padding-bottom: 20px; letter-spacing: 2px; font-size: 12px; }
+.sm_head.menu_overlay { padding-bottom: 20px; padding-top: 30px; letter-spacing: 2px; font-size: 12px; }
 
 .sm_head.screen_003 { text-align: center; padding-bottom: 20px; }
 
@@ -214,8 +259,6 @@ ul.accordion li.accordion_wrapper a.toggle:hover { background: rgba(0, 0, 0, 0.9
 .centered { text-align: center; }
 
 header { position: fixed; top: 0; width: 100%; padding: 30px 15px 15px; background: #000; z-index: 1; }
-
-@media screen and (min-width: 420px) { header { display: none; } }
 
 .logo { text-align: center; position: relative; z-index: 9999; width: 25%; margin: auto; }
 
@@ -233,13 +276,17 @@ header { position: fixed; top: 0; width: 100%; padding: 30px 15px 15px; backgrou
 
 .home_group ul li a { color: white; font-size: 18px; }
 
+@media screen and (min-width: 767px) { .home_group ul li a { font-size: 26px; } }
+
 .home_desc { margin-top: 50px; text-align: center; }
+
+@media screen and (min-width: 767px) { .home_desc { font-size: 22px; } }
+
+@media screen and (min-width: 1024px) { .home_desc { font-size: 24px; } }
 
 .big_devices { padding-top: 50px; margin: auto; width: 100%; line-height: 1; font-size: 16px; font-family: "Montserrat", sans-serif; font-weight: 600; text-align: center; text-transform: uppercase; }
 
 .big_device_group { display: none; }
-
-@media screen and (min-width: 420px) { .big_device_group { display: block; } }
 
 .support { font-family: "Montserrat", sans-serif; text-align: center; font-size: 9px; text-transform: uppercase; padding-bottom: 5px; }
 
@@ -375,6 +422,8 @@ nav ul { padding-inline-start: 0; }
 nav ul li { font-size: 24px; line-height: 1; padding-bottom: 20px; }
 
 @media screen and (min-width: 375px) { nav ul li { font-size: 28px; } }
+
+@media screen and (min-width: 767px) { nav ul li { font-size: 34px; } }
 
 .overlay_menu { color: #C8F330; font-size: 24px; }
 

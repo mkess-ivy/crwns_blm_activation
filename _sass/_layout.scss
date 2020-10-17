@@ -14,21 +14,45 @@
             line-height: 30px;
         }
     }
+    &.home {
+        @include laptop {
+            padding-top: 50px;
+        }
+    }
+
+    &.overlayheader {
+        color: $yellow;
+        @include desktop {
+            font-size: 75px;
+        }
+    }
 
     @include small {
         font-size: 44px; 
         // line-height: 44px;  
     }
+
+    @include tablet {
+        font-size: 60px;
+        line-height: 0.9;
+    }
+    @include desktop {
+        font-size: 65px;
+    }
 }
 .std_copy {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1.4;
     letter-spacing: 0.2;
     font-family: $body-font;
     font-weight: 300;
 
     a {
         color: white;
+    }
+
+    @include laptop {
+        font-size: 22px;
     }
 }
 .sm_head {
@@ -37,6 +61,7 @@
 
     &.menu_overlay {
         padding-bottom: 20px;
+        padding-top: 30px;
         letter-spacing: 2px;
         font-size: 12px;
     }
@@ -64,8 +89,8 @@ header {
     background: $black;
     z-index: 1;
 
-    @include palm {
-        display: none;
+    @include laptop {
+        // display: none;
     }
 }
 .logo {
@@ -109,6 +134,13 @@ header {
             a {
                 color: white;
                 font-size: 18px;
+
+                @include tablet {
+                    font-size: 26px;
+                }
+                @include laptop {
+                    // font-size: 36px;
+                }
             }
         }
     }
@@ -116,6 +148,13 @@ header {
 .home_desc {
     margin-top: 50px;
     text-align: center;
+
+    @include tablet {
+        font-size: 22px;
+    }
+    @include laptop {
+        font-size: 24px;
+    }
 }
 
 // Big Devices
@@ -133,8 +172,8 @@ header {
 .big_device_group {
     display: none;
 
-    @include palm {
-        display: block;
+    @include laptop {
+        // display: block;
     }
 }
 
